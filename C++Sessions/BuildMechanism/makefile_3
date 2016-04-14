@@ -1,0 +1,27 @@
+# Demonstrates variables and macros
+CC  = g++
+
+OBJ = myApp.o \
+	  twice.o \
+	  thrice.o
+
+.PHONY: all
+
+# Specify all the targets that needs built
+all: myApp
+
+myApp: myApp.o twice.o thrice.o
+#	$(CC) -o myApp myApp.o twice.o thrice.o
+	$(CC) -o $@ myApp.o twice.o thrice.o
+	
+myApp.o: myApp.cpp
+	$(CC) -c myApp.cpp
+
+twice.o: twice.cpp 
+	$(CC) -c twice.cpp
+
+thrice.o: thrice.cpp
+	$(CC) -c thrice.cpp
+
+clean:
+	rm *.o

@@ -1,0 +1,7 @@
+1. grep -n "@*" text.txt ==> displays all the lines as they match zero or more occurences of the character @.
+2. grep -n "@@*" text.txt ==> displays lines 1 & 2 that have the @ character.
+3. grep "Girish.*@" text.txt ==> supposingly we are not sure whether the name is just "Girish" or "Girish.kumar", we can use the regular expression .* to match zero or any number of characters.
+4. grep -n "Vi[nj]ay" text.txt ==> Here we are not sure whether the name is Vijay or Vinay, hence we are using the character class where it matches either n or j.
+5. grep -n "^2" text.txt ==> Retrieves the employees whose ID's start with 2.
+6. grep -n "com$" text.txt ==> Retrieves the lines containing the E-mail IDs.
+7. sed 's/TCS/Tata Consultancy Services/' text.txt replaces the string 'TCS' with 'Tata Consultancy Services'.

@@ -1,0 +1,29 @@
+To: Girish.kumar@xyz.com
+From: Vinay.sarma@xyz.com
+Subject: RouteMap for the project "Colours"
+
+Hi,
+
+Here are the details:
+
+Marketing : 3456
+Sales     : 6789
+Operations: 1234
+
+Employee numbers:
+2345
+5678
+2123
+3276
+
+Junk:
+aaabbaaa
+aaabba
+aaabbabb
+aaaa
+
+TCS is a part of the TATA group
+
+Best Wishes,
+
+Girish

@@ -1,0 +1,21 @@
+All creational patterns
+
+Structural Patterns
+
+	Adapter
+	
+	Bridge
+	
+	Proxy
+	
+	Composite
+
+Behavioral patterns
+
+	Command
+
+	Interpreter
+
+	Iterator
+
+	Mediator

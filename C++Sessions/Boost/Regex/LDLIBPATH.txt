@@ -1,0 +1,4 @@
+LD_LIBRARY_PATH=/home/159231/boost_1_45_0/stage/lib
+
+g++ -Wall -g -I"/home/159231/boost_1_45_0" regex.cpp -L"/home/159231/boost_1_45_0/stage/lib" -lboost_regex -o dyn
+

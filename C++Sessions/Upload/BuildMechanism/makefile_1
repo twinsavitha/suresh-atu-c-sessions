@@ -1,0 +1,14 @@
+# Demonstrates the simplest makefile
+# invoke as 'make' at the command prompt
+
+myApp: myApp.o twice.o thrice.o
+	g++ -o myApp myApp.o twice.o thrice.o
+
+myApp.o: myApp.cpp
+	g++ -c myApp.cpp
+
+twice.o: twice.cpp 
+	g++ -c twice.cpp
+
+thrice.o: thrice.cpp
+	g++ -c thrice.cpp

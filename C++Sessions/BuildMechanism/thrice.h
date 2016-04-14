@@ -1,0 +1,2 @@
+int
+threeTimes(int x);

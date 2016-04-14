@@ -1,0 +1,12 @@
+14120141854 - HDFC Credit card cancelation request
+1. Set the environmental variable PATH to point the location of the bjam file.
+	1.1. bjam executable looks for boost-build.jam
+	1.2. boost-build.jam refers to the bootstrap.jam to run the actual engine
+
+2. Specify an environmental variable BOOST_BUILD_PATH pointing to the location of boost-build.jam as in step 1.1
+
+Write a script file to set both PATH and BOOST_BUILD_PATH
+
+3. Create a file Jamroot.jam with the necessary instructions in it to build the project.
+==============================
+

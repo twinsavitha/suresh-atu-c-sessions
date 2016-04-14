@@ -1,0 +1,21 @@
+# Demonstrates the targets
+
+.PHONY: all
+
+# Specify all the targets that needs built
+all: myApp
+
+myApp: myApp.o twice.o thrice.o
+	g++ -o myApp myApp.o twice.o thrice.o
+
+myApp.o: myApp.cpp
+	g++ -c myApp.cpp
+
+twice.o: twice.cpp 
+	g++ -c twice.cpp
+
+thrice.o: thrice.cpp
+	g++ -c thrice.cpp
+
+clean:
+	rm -f *.o
